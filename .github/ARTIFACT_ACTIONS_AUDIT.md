@@ -13,13 +13,13 @@ This audit was conducted to identify and upgrade any deprecated v3 artifact acti
 
 ### Workflow Files Audited
 
-- `.github/workflows/deploy-pages.yml` ✅
+- `.github/workflows/pages.yml` ✅
 
 ### Current Artifact-Related Actions in Use
 
 | Workflow | Action | Version | Status |
 |----------|--------|---------|--------|
-| deploy-pages.yml | actions/upload-pages-artifact | v1 | ✅ Supported (specialized action for Pages) |
+| pages.yml | actions/upload-pages-artifact | v3 | ✅ Supported (specialized action for Pages) |
 
 ## Recommendations
 
@@ -86,10 +86,10 @@ January 8, 2026
 
 ## Workflow Analysis
 
-### `.github/workflows/deploy-pages.yml`
-- **Action Used**: `actions/upload-pages-artifact@v1`
+### `.github/workflows/pages.yml`
+- **Action Used**: `actions/upload-pages-artifact@v3`
 - **Status**: ✅ Appropriate - This is a specialized action for GitHub Pages, not the general artifact action
-- **Notes**: This workflow correctly uses the Pages-specific artifact action for deployment
+- **Notes**: This workflow correctly uses the Pages-specific artifact action for deployment with the latest recommended version
 
 ## Recommendations
 
